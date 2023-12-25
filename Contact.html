@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Connect with Christie Sheldon. Fill out the form to share your details, current profession, and future goals. Let's build a meaningful connection.">
+                <meta name="keywords" content="Contact Us, Connect, Christie Sheldon, Form, Future Goals, Profession, Message">
+                <meta name="author" content="Christie Sheldon">
+                <title>Contact Us | Christie Sheldon</title>
+                <link rel="stylesheet" href="NW.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+  <section id="navbar">          
+    <a href="index.html"><img src="LOGO_CS.png" class="Logo" alt="Christie Sheldon Logo"></a>
+    <div>
+      <ul id="navbar-nav">
+      <li><a class="nav-link" href="index.html">HOME</a></li>
+      <li><a class="nav-link" href="AboutUs.html">ABOUT</a></li>
+      <li><a class="nav-link" href="products.html">PRODUCTS</a></li>
+      <li><a class="active" href="Contact.html">CONTACT US</a></li>
+      <li id="lg-cart"><a class="nav-link" href="Cart.html">CART</a></li>
+      <a href="#" id="close"><i class="fas fa-arrow-left"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <i id="bar" class="fas fa-bars"></i>
+    </div>
+    </section>
+<header>Let's Connect!</header>
+<h4 style="text-align:center; font-weight: 400; font-size: 20px;">Please Fill Out The Form!</h4>
+<form id="form" class="topBefore" onsubmit="return validateForm()">		
+		  <input id="name" type="text" placeholder="NAME" required>
+      <span id="name-error" style="color: red;"></span>  <!-- STYLE FOR ERRORS (VALIDATIONS) -->
+		  <input id="city" type="text" placeholder="CITY" required>
+          <input id="age" type="number" placeholder="AGE" required min="1">
+          <span id="age-error" style="color: red;"></span> 
+		  <input id="Contact.num" type="text" placeholder="CONTACT NO." required>
+      <span id="contact-error" style="color: red;"></span>
+          <input id="profession" type="text" placeholder="YOUR CURRENT PROFESSION" required>
+		  <input id="futuregoals" type="text" placeholder="FUTURE GOALS" required>
+		  <textarea id="message" placeholder="MESSAGE"></textarea>
+  <input id="submit" type="submit" value="SUBMIT!">
+  
+</form>
+          
+
+<!-- FOOTER -->
+
+            <footer class="section-p1"> 
+              <div class="col">
+                <img src="LOGO_CS.png" alt="Christie Sheldon Logo">
+                <h4>Contact Info</h4>
+                <p><strong>Email:</strong>contact@christiesheldon.com</p>
+                <p><strong>Phone:</strong>(555) 123-4567</p>
+              </div>
+              <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+			
+              <div class="copyright">
+			  <h2> CHRISTIE SHELDON </h2>
+                <p>© copyright christiesheldon 2023, All Right Reserverd</p>
+              </div>
+			  
+
+            </footer>
+</body>
+
+            <script>
+               // Function to validate the form
+              function validateForm() {
+                // Get values from input fields
+    var nameInput = document.getElementById("name").value;            
+    var ageInput = document.getElementById("age").value;
+    var contactInput = document.getElementById("Contact.num").value;
+     // Get error elements
+    var nameError = document.getElementById("name-error");
+    var ageError = document.getElementById("age-error");
+    var contactError = document.getElementById("contact-error");
+
+        // Validate name
+        if (nameInput.trim().length < 3) {
+        nameError.innerHTML = "Name must be at least 3 characters.";
+        return false;
+    } else if (/^\d+$/.test(nameInput)) {
+        nameError.innerHTML = "Name cannot be a number.";
+        return false;
+    } else {
+        nameError.innerHTML = "";
+    }
+
+    // Validate age
+    if (ageInput.trim() === "") {
+        ageError.innerHTML = "Age cannot be empty.";
+        return false;
+    }
+
+    // Check if age is above 16
+    if (parseInt(ageInput) <= 16) {
+        ageError.innerHTML = "Age must be above 16.";
+        return false;
+    }
+    ageError.innerHTML = "";
+
+    // Validate contact number
+    if (!/^\d+$/.test(contactInput)) {
+        contactError.innerHTML = "Contact number must contain only numbers.";
+        return false;
+    } else {
+        contactError.innerHTML = "";
+    }
+
+     // If all validations pass, the form is considered valid
+    return true;
+}
+              </script>
+
+            <script src="script.js"></script>

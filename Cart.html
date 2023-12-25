@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage items in your cart at Christie Sheldon. Explore our premium products and proceed to checkout for a seamless shopping experience.">
+    <meta name="keywords" content="Shopping Cart, Cart Items, Cart Total, Voucher, Christie Sheldon, Checkout, Cart Management">
+    <meta name="author" content="Christie Sheldon">
+    <title>Your Cart | Christie Sheldon</title>
+    <link rel="stylesheet" href="NW.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+  <section id="navbar">
+
+    <a href="#"><img src="LOGO_CS.png" class="Logo" alt="Christie Sheldon Logo"></a>
+    <div>
+      <ul id="navbar-nav">
+      <li><a class="nav-link" href="index.html">HOME</a></li>
+      <li><a class="nav-link" href="AboutUs.html">ABOUT</a></li>
+      <li><a class="nav-link" href="products.html">PRODUCTS</a></li>
+      <li><a class="nav-link" href="Contact.html">CONTACT US</a></li>
+      <li id="lg-cart"><a class="active" href="Cart.html">CART</a></li>
+      <a href="#" id="close"><i class="fas fa-arrow-left"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <i id="bar" class="fas fa-bars"></i>
+    </div>
+    </section>
+
+<section id="cart" class="section-p1">
+  <!-- cart table -->
+    <table>
+        <thead>
+            <tr>
+                <td>Item Image</td>
+                <td>Item Name</td>
+                <td>Each</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="Alovera_2.jpeg" alt="Item Image">
+                </td>
+                <td>Alovera Gel</td>
+                <td>$78.00</td>
+                <td>
+                  <input type="number" value="2" min="1" max="5" id="Cartinput">
+                </td>
+                <td>$158.00</td> 
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section id="cart-add" class="section-p1">
+  <!-- Voucher Section -->
+  <div id="coupon">
+  <h3>Apply a Voucher</h3>
+  <div>
+    <input type="text" placeholder="Enter a Voucher code" id="Voucher">
+    <button>Apply</button>
+  </div>
+</div>
+<!-- Subtotal table's section -->
+  <div id="subtotal">
+    <h3>Cart Totals</h3>
+    <table>
+      <tr>
+        <td>Cart Subtotal</td>
+        <td>$158</td>
+      </tr>     
+      <tr>
+        <td>Shipping</td>
+        <td>$0.5</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>$158.5</strong></td>
+      </tr>
+    </table>
+    <a href="Checkout.html" class="Subtotal-link">Proceed to checkout</a>
+  </div>
+</section>
+
+
+            <footer class="section-p1"> 
+              <div class="col">
+                <img src="LOGO_CS.png" alt="Christie Sheldon Logo">
+                <h4>Contact Info</h4>
+                <p><strong>Email:</strong>contact@christiesheldon.com</p>
+                <p><strong>Phone:</strong>(555) 123-4567</p>
+              </div>
+              <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+			
+              <div class="copyright">
+			  <h2> CHRISTIE SHELDON </h2>
+                <p>© copyright christiesheldon 2023, All Right Reserverd</p>
+              </div>
+			  
+
+            </footer>
+          </body>
+
+
+            <script src="script.js"></script>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Securely complete your purchase with Christie Sheldon's easy and secure checkout process. Enter your personal, shipping, and payment information to finalize your order and enjoy our premium products.">
+    <meta name="keywords" content="Checkout, Order, Payment, Personal Information, Shipping, Christie Sheldon, Secure Checkout">
+    <meta name="author" content="Christie Sheldon">
+    <title>Checkout | Christie Sheldon</title>
+    <link rel="stylesheet" href="NW.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+
+<body>
+<section id="navbar">
+
+            <a href="#"><img src="LOGO_CS.png" class="Logo" alt="Christie Sheldon Logo"></a>
+        
+            <div>
+              <ul id="navbar-nav">
+              <li><a class="nav-link" href="index.html">HOME</a></li>
+              <li><a class="nav-link" href="AboutUs.html">ABOUT</a></li>
+              <li><a class="nav-link" href="products.html">PRODUCTS</a></li>
+              <li><a class="nav-link" href="Contact.html">CONTACT US</a></li>
+              <li id="lg-cart"><a class="active" href="Cart.html">CART</a></li>
+              <a href="#" id="close"><i class="fas fa-arrow-left"></i></a>
+              </ul>
+            </div>
+            <div id="mobile">
+              <a class="nav-link" href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+              <i id="bar" class="fas fa-bars"></i>
+            </div>
+            </section>
+<h3 style="text-align: center;">Checkout</h3>
+  <div class="checkout-container">
+    <div class="personal-info">
+      <h2>Personal Information</h2>
+      <form id="personal-info-form">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required placeholder="Enter your Name">
+        <span id="fname-error" style="color: red;"></span>  <!-- STYLE FOR ERRORS (VALIDATIONS) -->
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required placeholder="Enter your Last name">
+        <span id="lname-error" style="color: red;"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your Email address">
+        <span id="email-error" style="color: red;"></span>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your Contact no.">
+        <span id="phone-error" style="color: red;"></span>
+      </form>
+    </div>
+
+    <div class="shipping-info">
+      <h2>Shipping Information</h2>
+      <form id="shipping-info-form">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required placeholder="Enter your Home address">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required placeholder="Enter your City">
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip" required placeholder="Enter your Zip Code">
+        <span id="zip-error" style="color: red;"></span>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required placeholder="Enter your Country">
+      </form>
+    </div>
+    <div class="payment-info">
+      <h2>Payment Information</h2>
+      <form id="payment-info-form">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required placeholder="**** **** **** ****">
+        <span id="card-number-error" style="color: red;"></span>  <!-- Style for error on forms -->
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YYYY">
+        <span id="expiry-date-error" style="color: red;"></span>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required placeholder="CVC">
+        <span id="cvv-error" style="color: red;"></span>
+      </form>
+    </div>
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <!-- Display the user's selected items and total price here -->
+    </div>
+  </div>   
+  <!--When the button will be clicked, JavaScript function "validateAndPlaceOrder will be called--> 
+  <button id="place-order-btn" onclick="validateAndPlaceOrder()">Place Order</button>    
+  <footer class="section-p1"> 
+    <div class="col">
+      <img src="LOGO_CS.png" alt="Christie Sheldon Logo">
+      <h4>Contact Info</h4>
+      <p><strong>Email:</strong>contact@christiesheldon.com</p>
+      <p><strong>Phone:</strong>(555) 123-4567</p>
+    </div>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+    <div class="copyright">
+<h2> CHRISTIE SHELDON </h2>
+      <p>© copyright christiesheldon 2023, All Right Reserverd</p>
+    </div>
+
+
+  </footer>
+
+</body>
+
+
+<!-- Validations -->           
+            <script>
+              // Function to validate form inputs and place an order
+              function validateAndPlaceOrder() {
+                // First name validation
+    var firstNameInput = document.getElementById("fname").value;
+    var firstNameError = document.getElementById("fname-error");
+    var nameRegex = /^[a-zA-Z]{3,}$/;
+    if (!nameRegex.test(firstNameInput)) {
+      firstNameError.innerHTML = "Make sure to not leave this field empty. First name should be: <br> * At least 3 characters long <br> * Does not contain numbers.";
+      return;
+    }
+    firstNameError.innerHTML = "";
+    // Similar validations for last name, email, phone, card number, CVV, ZIP code, and expiry date
+    // Last name
+    var lastNameInput = document.getElementById("lname").value;
+    var lastNameError = document.getElementById("lname-error");
+    if (!nameRegex.test(lastNameInput)) {
+      lastNameError.innerHTML = "Make sure to not leave this field empty. Last name should be: <br> * At least 3 characters long <br> * Does not contain numbers.";
+      return;
+    }
+    lastNameError.innerHTML = "";
+    // Email
+    var emailInput = document.getElementById("email").value;
+    var emailError = document.getElementById("email-error");
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput)) {
+      emailError.innerHTML = "Do not leave this field empty.<br> Make sure to use a valid email format (e.g., user@example.com)";
+      return;
+    }
+    emailError.innerHTML = "";
+    // Phone
+    var phoneInput = document.getElementById("phone").value;
+    var phoneError = document.getElementById("phone-error");
+    var phoneRegex = /^\d+$/;
+    if (!phoneRegex.test(phoneInput)) {
+      phoneError.innerHTML = "Please fill this area with a correct phone number.";
+      return;
+    }
+    phoneError.innerHTML = "";
+
+     // Card number
+     var cardNumberInput = document.getElementById("card-number").value;
+    var cardNumberError = document.getElementById("card-number-error");
+    var cardNumberRegex = /^\d{16}$/;
+
+    if (!cardNumberRegex.test(cardNumberInput)) {
+      cardNumberError.innerHTML = "This field is required. <br> Card number should be a 16-digit number.";
+      return;
+    }
+
+    cardNumberError.innerHTML = "";
+
+    // CVV
+    var cvvInput = document.getElementById("cvv").value;
+    var cvvError = document.getElementById("cvv-error");
+    var cvvRegex = /^\d{3}$/;
+
+    if (!cvvRegex.test(cvvInput)) {
+      cvvError.innerHTML = "This field is required. <br> CVV should be a 3-digit number.";
+      return;
+    }
+    cvvError.innerHTML = "";
+
+    // ZIP code
+    var zipInput = document.getElementById("zip").value;
+    var zipError = document.getElementById("zip-error");
+    var zipRegex = /^\d{5}$/;
+
+    if (!zipRegex.test(zipInput)) {
+      zipError.innerHTML = "This field is required. <br> ZIP code should be a 5-digit number.";
+      return;
+    }
+    zipError.innerHTML = "";
+                //expiry date
+                  var expiryDateInput = document.getElementById("expiry-date").value;
+                  var expiryDateError = document.getElementById("expiry-date-error");
+              
+
+                  var dateRegex = /^(0[1-9]|1[0-2])\/\d{4}$/;
+              
+                  if (!dateRegex.test(expiryDateInput)) {
+                      expiryDateError.innerHTML = "This field is required. <br> Make sure to use correct expiry date format (MM/YYYY)";
+                      return;
+                  }
+                  expiryDateError.innerHTML = "";
+                  console.log("Order placed successfully!");
+              }
+  
+              </script>
+
+
+            <script src="script.js"></script>

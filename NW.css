@@ -1,0 +1,1491 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Set font family for all elements */
+}
+
+
+h1 {
+    font-size: 40px; /* Set font size for h1 */
+    line-height: 64px; /* Set line height for h1 */
+    color: black;  /* Set text color for h1 */
+}
+
+h2 {
+    font-size: 30px; /* Set font size for h2 */
+    line-height: 64px; /* Set line height for h2 */
+    color: black;   /* Set text color for h2 */
+}
+
+h3 {
+    font-size: 50px; /* Set font size for h3 */
+    line-height: 64px;  /* Set line height for h3 */
+    color: black;  /* Set text color for h3 */
+}
+
+h4 {
+    font-size: 25px;  /* Set font size for h4 */
+    color: black; /* Set text color for h4 */
+}
+
+h5 {
+    font-size: 50px;  /* Set font size for h5 */
+    line-height: 64px;   /* Set line height for h5 */
+    color: black;  /* Set text color for h5 */
+}
+/* PARAGRAPH STYLES */
+p {
+    font-size: 20px;     /* Set font size for paragraphs */
+    color: rgb(49, 48, 48);   /* Set text color for paragraphs */
+    margin: 15px 0 20px 0;   /* Set margin for paragraphs (top, right, bottom, left) */
+} 
+
+a {
+    text-decoration: none; /* Remove underline from anchor links */
+    color: inherit; /* Set the link color to inherit from its parent */
+}
+
+/* SHOP NOW BUTTON */
+.ShopNow{
+   display: inline-block;  /* Display as an inline block element */
+            padding: 10px 20px;  /* Padding inside the button */
+            font-size: 16px;  /* Font size */
+            text-align: center;  /* Center-align text */
+            text-decoration: none;   /* Remove text decoration (underlining) from anchor links */
+            cursor: pointer; /* Set cursor to pointer on hover */
+            border: 2px solid #000000;    /* Border style and color */
+            border-radius: 20px;  /* Border radius for rounded corners */
+            color: rgb(20, 7, 7);   /* Text color */
+            background-color: transparent;  /* Transparent background */
+            transition: background-color 0.3s, color 0.3s;   /* Smooth transition effect for background and text color changes */
+}
+
+.ShopNow:hover {
+  background-color: #b3aca7; /* Background color on hover */
+  color: #ffffff;  /* Text color on hover */
+}
+
+/* Button Hover Effect */
+      button:hover {
+            background-color: #b3aca7; /* Background color on hover */
+            color: #ffffff;  /* Text color on hover */
+        }
+        
+
+
+    .section-m1 {
+        margin: 40px 0;  /* Margin of 40px on top and bottom, 0 on left and right */
+    }
+
+.body {
+    width: 100%; /* Set body width of website to 100% */
+} 
+
+/*navbar */
+
+#navbar {
+    display: flex;  /* Displays flex container */
+    align-items: center;  /* Aligns items along the cross-axis (vertically centered) */
+    justify-content: space-between;  /* Distributes space evenly between flex items */
+    padding: 20px 80px;   /* Sets padding for the navbar */
+    background: #6b6868;    /* Sets background color for the navbar */
+    box-shadow: 0 5px 15px rgb(126, 126, 126);   /* Adds a box shadow to the navbar */
+    height: 40px;  /* Sets the height of the navbar */
+    z-index: 999; /* Sets the stacking order of the navbar */
+    position: sticky;  /* Makes the navbar stick to the top even if the page is scrolled */
+    top: 0; /* Positions the navbar at the top */
+    left: 0;  /* Positions the navbar at the left */
+}
+
+
+.Logo {
+    width: 200px; /* Sets the width of the logo */
+    height: auto;  /* Maintains the aspect ratio of the logo */
+}
+
+#navbar-nav li {
+    list-style: none; /* Removes list styling */
+    padding: 0 20px;  /* Sets horizontal padding for list items in the navbar */
+    position: relative;  /* Sets the positioning context for pseudo-elements */
+}
+
+#navbar-nav {
+    display: flex;  /* Displays flex container for navbar navigation */
+    align-items: center;   /* Aligns items along the cross-axis (vertically centered) */
+    justify-content: center;    /* Centers content along the main-axis */
+}
+
+#navbar-nav li a{
+    text-decoration: none;  /* Removes the default underlining of anchor links */
+    font-size: 16px;  /* Sets the font size for anchor links */
+    font-weight: 100;  /* Sets the font weight for anchor links */
+    color: rgb(243, 255, 198);    /* Sets the text color for anchor links */
+    transition: 0.3s ease;  /* Adds a smooth transition effect */
+} 
+
+#navbar-nav li a:hover,
+#navbar-nav li a.active{
+    color: rgb(54, 51, 51); /* Changes text color on hover or when active */
+}
+
+#navbar-nav li a.active::after,
+#navbar-nav li a:hover::after {
+    content: "";  /* Adds an empty content for pseudo-element */
+    width: 30%;   /* Sets the width of the underline for active or hover state */
+    height: 2px;     /* Sets the height of the underline for active or hover state */
+    background: rgb(54, 51, 51);  /* Sets the background color of the underline */
+    position: absolute;  /* Positions the underline absolutely */
+    bottom: -4px;  /* Positions the underline below the text */
+    left: 20px;   /* Positions the underline with a left offset */
+}
+
+#mobile {
+  display: none;  /* Hides the mobile navigation by default */
+  align-items: center;   /* Aligns items vertically centered*/
+}
+#close{
+  display: none;  /* Hides the close icon by default for large screen sizes */
+}
+/* HOME */
+
+.HomeText {
+    height: 1%;
+    width: 40%;
+	margin-left:20%;
+    background-position: top 25% right 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  
+	
+}
+
+
+
+
+.container {
+  max-width: 100%;
+  margin-bottom: 1%;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-right: 20%;
+  padding-left: 13%;
+  background-color: #ebe6e6;
+  border: 2px solid #000000;
+}
+  
+
+  
+  #Home {
+    display: flex;
+    justify-content: space-between;
+  }
+
+   /* to align image and text */
+
+ 
+  
+	.Himg {
+	margin-top: -30%;
+	padding-right: 20px;
+	text-align: right;
+	background-size: cover;
+	
+}
+
+/*HomePage*/
+
+/* hero*/
+#hero .HeroImg{
+margin-top: 5%; /*for adding spacings from top*/
+margin-bottom: 5%; /*for adding spacings from bottom*/
+width: 20%; /*setting images's width*/ 
+height: auto;
+border: 4px solid #161616; /*Images is given a solid colored border*/  
+}
+#hero {                     
+    display: flex; /* make the hero section a flex container*/
+    align-items: center; /* items aligning in the center horizontally*/
+    text-align: left; /* So that the text is aligned to the left of the page*/
+}
+/*Hero  Client Reviews*/
+#ClientRev{
+  display: flex; /* flex layout */
+  justify-content: center; 
+  align-items: center; /* To align items in the container to the center of the page */
+  flex-direction: column; /* For column layout */
+  width: 100%; /* Sets container's width */
+}
+.CR-heading{                /* Targets the heading's div */
+  letter-spacing: 1px;   /* Adds space between characters in the heading */
+  margin: 30px 0px;   /* Sets top and bottom margin */
+  padding: 10px 20px;  /* Sets padding inside the heading */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Arranges child elements in a column */
+  justify-content: center; /* Centers content vertically */
+  align-items: center;  /* Centers content horizontally */
+}
+#CR-heading h4{      /* Styling for h4 inside the CR-heading */
+  font-size: 2.2rem;  /* Sets font size */
+  font-weight: 500;   /* Sets font size */
+  background-color: #8a857f;  /* Sets font size */
+  color: white;   /* Sets font size */
+}
+#CR-heading h2{
+  font-size: 1.3rem;  /* Sets font size */
+  color:#1b1b1b;  /* Text color */
+  margin-bottom: 10px;  /* Sets bottom margin for spacing from bottom*/
+  letter-spacing: 2px; /* Adds space between characters */
+  text-transform: uppercase;  /* Converts text to uppercase */
+  text-align: center; /* Brings text to the center */
+}
+.CRBC{                       /* Styling for the container of customer reviews */
+  display: flex;     /* Centers content horizontally */
+  justify-content: center;    /* Centers content vertically */
+  align-items: center;  /* Allows items to wrap to the next line */
+  flex-wrap: wrap;  /* Allows items to wrap to the next line */
+  width: 100%; /* Sets width of the parent container */
+}
+.CRB{   /* Styling for individual customer review boxes */
+  box-shadow: 2px 2px 30px black; /* Adds a shadow to the box */
+  background-color: #666; /* Background color of the box */
+  padding: 20px;  /* Sets padding inside the box */
+  margin: 15px;  /* Sets margin around the box */
+  cursor: pointer; /* Changes cursor on hover to indicate interactivity */
+}
+.ProfileImg{
+  width: 50px;   /* Sets width of the profile image */
+  height: 50px;   /* Sets height of the profile image */
+  border-radius: 50%; /* Creates a circular border */
+  overflow: hidden;  /* Hides any content that overflows the border */
+  margin-right: 10px;  /* Sets right margin for spacing */
+
+}
+.ProfileImg img{  /* Styling for images inside the profile image container */
+  width: 100%;     /* Sets image width to 100% of the container */
+  height: 100%;   /* Sets image height to 100% of the container */
+  object-fit: cover;  /* Scales the image while maintaining its aspect ratio */
+  object-position: center;   /* Centers the image within its container */
+}
+.profile{    /* Styling for the profile information container */
+  display: flex;   /* Enables flexbox layout */
+  align-items: center;   /* Centers content vertically */
+}
+.name-user{   /* Styling for the name and username container */
+  display: flex;   /* Enables flexbox layout */
+  flex-direction: column; /* Arranges children in a column */
+}
+.name-user strong{   /* Styling for the strong (name) element */
+  color: #353434;  /* Text color */
+  font-size: 1.1rem;  /* Sets font size */
+  letter-spacing: 0.5px;  /* Adds space between characters */
+}
+.name-user span{    /* Styling for the span (username) element */
+  color: #3a3a39;    /* Text color */
+  font-size: 0.8rem;   /* Sets font size */
+}
+.ClientR{
+  color: #f9d71c;  /* color for Client's review stars */
+}
+.box-top{      /* Styling for the top section of the review box */
+  display: flex;   /* Styling for the top section of the review box */
+  justify-content: space-between;    /* Distributes space evenly between items */
+  align-items: center;   /* Centers content vertically */
+  margin-bottom: 20px;   /* Sets bottom margin */
+}
+.client-comment p{   /* Styling for the client comment paragraph */
+  font-size: 0.9rem;  /* Sets font size */
+}
+
+.CRB:hover{              /* Hover effect for customer review boxes */
+  transform: translateY(-10px);  /* Moves the box up on hover */
+  transition: all ease 0.3s;  /* Adds a smooth transition effect */
+}
+
+  /*Footer*/
+  footer {
+    display: flex;    /* Enables flexbox layout */
+    flex-wrap: wrap;   /* Allows items to wrap to the next line */
+    justify-content: space-between;   /* Distributes space evenly between items */
+    background-color: rgb(168, 157, 157);  /* Background color of the footer */
+    box-shadow: #030303;  /* Adds a box shadow to the footer */
+  }
+footer .logo {
+    margin-bottom: 30px;    /* Sets bottom margin for the logo */
+}
+footer h4{
+    font-size: 14px;    /* Sets font size for h4 elements */
+    
+}
+footer p{
+    font-size: 13px;  /* Sets font size for p elements */
+    margin: 0 0 8px 0;  /* Sets margin for p elements */
+}
+
+footer .follow{
+    margin-top: 20px;  /* Sets top margin for the follow section */
+}
+
+footer .follow i{
+    color: #000000;   /* Sets color for the icons */
+    padding-right: 4px;  /* Sets right padding for the icons */
+    cursor: pointer;   /* Changes cursor on hover to indicate interactivity */
+}
+
+footer .copyright {   /* Styling for the copyright section inside the footer */
+    width: 100%;  /* Sets width to 100% of the parent container */
+    text-align: center;  /* Aligns text to the center */
+}
+
+
+
+/* About */
+
+.AboutText button{
+    background-image: url("button.png");
+    background-color: transparent;
+    color: #422b2b;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/*About Us*/
+.AbtImg{
+  width: 50%;  /* setting its width */
+  height: auto; /*  to ensure proportional adjustment, maintaining the image's original aspect ratio */
+}
+
+#about-head {
+  display: flex; /*facilitates the alignment of child elements*/
+  align-items: center; /*centers all items vertically */
+  text-align: left; /*establishes left alignment for text within the section*/
+}
+#about-head div {
+  padding-left: 40px;  /* padding from left inside the div */
+  padding-bottom: 70px; /* padding from bottom inside the div */
+  padding-top: 40px; /* padding from top inside the div */
+}
+/* Style for the footer section */
+.section-p1 {
+     /* Add some padding for spacing */
+    text-align: center; /* Center the content */
+}
+/* Style for the columns within the footer */
+.section-p1 .col {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px; /* Adjust the margin between columns */
+	margin-left: 150px;
+}
+/* Style for the follow section */
+.section-p1 .follow {
+    margin-top: 90px; /* Adjusts the margin at the top of the follow section */
+	margin-right: 180px; /* Adjusts the margin at the right of the follow section */
+}
+/* Style for the social media icons */
+.section-p1 .icon i {
+    font-size: 24px; /* Sets the size of the icons */
+    margin: 0 10px; /* Adjusts the margin between icons */
+}
+
+/* Style for the copyright section */
+.section-p1 .copyright {
+    margin-bottom: 20px; /* Adjusts the margin at the top of the copyright section */
+    color: #666; /* Sets the text color */
+}
+
+.col img{
+    max-width: 200px; /* Set the maximum width of the logo */
+    height: auto; /*  to ensure proportional adjustment, maintaining the logo image's original aspect ratio */
+}
+	
+
+/* CONTACT FORM */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: black; /* Placeholder text color */
+  font-size: 0.875em; /* Placeholder font size */
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af; /* Placeholder text color */
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: black; 
+  font-size: 0.875em;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+input::placeholder,
+textarea::placeholder {
+  color: black; 
+  font-size: 0.875em;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #bbb5af;  
+}
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+  color: black; 
+  font-size: 0.875em;
+}
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+/* on hover placeholder */
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;  /* Placeholder text color on hover */
+  font-size: 0.875em;  /* Placeholder font size on hover */
+}
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;  /* Placeholder text color on focus and hover */
+}
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+input:hover:focus::-ms-placeholder,
+textarea:hover:focus::-ms-placeholder {
+  color: #cbc6c1;
+}
+body {
+  background: #e2dedb;  /* Sets the background color of the page */
+}
+header { 
+  position: relative;  
+  margin: 100px 0 25px 0;   /* Margin around the header */
+  font-size: 2.3em;   /* Font size of the header */
+  text-align: center;   /* Center-align text in the header */
+  letter-spacing: 7px;  /* Set spaces between letters of the text for the header */
+}
+#form {
+  position: relative;
+  width: 500px;  /* Set the width for the form container */
+  margin: 50px auto 100px auto;  /* Set margins for the form container */
+}
+input {
+  font-family: 'Lato', sans-serif; /* Set font family for input fields */
+  font-size: 0.875em;  /* Font size for input fields */
+  width: 470px;  /* Width of input fields */
+  height: 50px;  /* Height of input fields */
+  padding: 0px 15px 0px 15px; /* Padding for input fields */
+  background: transparent;  /* Transparent background for input fields */
+  outline: none;    /* Remove outline on focus */
+  color: #726659;   /* Text color for input fields */
+  border: solid 1px #000000;   /* Border style for input fields */
+  border-bottom: none;  /* Remove bottom border for input fields */
+  transition: all 0.3s ease-in-out;  /* Smooth transition effect */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+/* Styling on hover for input fields */
+input:hover {
+  background: #b3aca7;  /* Background color on hover */
+  color: #e2dedb;  /* Text color on hover */
+}
+/* Styling for textarea */
+textarea {
+  width: 470px;  /* Width of the textarea */
+  max-width: 470px;  /* Maximum width of the textarea */
+  max-height: 110px;  /* Maximum height of the textarea */
+  padding: 15px;   /* Padding for the textarea */
+  background: transparent;  /* Transparent background for the textarea */
+  outline: none;  /* Remove outline on focus */
+  color: #726659;  /* Text color for the textarea */
+  font-family: 'Lato', sans-serif; /* Font family for the textarea */
+  font-size: 0.875em;  /* Font size for the textarea */
+  border: solid 1px #000000;  /* Solid thin border for the textarea */
+  transition: all 0.3s ease-in-out;  /* Smooth transition effect */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+textarea:hover {
+  background: #b3aca7;  /* Background color on hover */
+  color: #e2dedb;  /* Text color on hover */
+}
+#submit {
+  width: 502px; /* Width of the submit button */
+  padding: 0;  /* Remove padding for the submit button */
+  margin: -5px 0px 0px 0px; /* Margin around the submit button */
+  font-family: 'Lato', sans-serif; /* Font family for the submit button */
+  font-size: 0.875em; /* Font size for the submit button */
+  color: #000000; /* Text color for the submit button */
+  outline:none; /* Remove outline on focus */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border: solid 1px #000000;  /* A thin solid border for the submit button */
+  border-top: none;  /* Remove top border for the submit button */
+  transition: color 0.3s ease-in-out; /* Smooth transition effect for text color */
+}
+#submit:hover {
+  color: #e2dedb;  /* Text color on hover */
+}
+/* PRODUCTS */
+#product1 {
+  text-align: center;  /* Centers the text within the product1 section */
+}
+#product1 .pro-container {
+  display: flex;  /* Enables flexbox layout for product container */
+  justify-content: space-between;  /* Distributes space evenly between items */
+  padding-top: 20px;  /* Adds top padding to the product container */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+#product1 .pro {
+  width: 28%; /* Sets the width of each product box */
+  min-width: 250px; /* Sets the minimum width of each product box */
+  padding: 10px 12px;  /* Adds padding inside each product box */
+  border: 1px solid rgb(126, 126, 126); /* Adds a solid border to each product box */
+  cursor: pointer; /* Changes cursor on hover to indicate interactivity */
+  transition: box-shadow 0.3s; /* Added transition for smooth hover effect */
+  margin: 15px 20px; /* Adds margin around each product box */
+}
+#product1 .pro:hover {
+  box-shadow: 0 0 10px rgba(119, 118, 118, 0.5); /* Updated box-shadow with values for h-shadow, v-shadow, blur, and color */
+}
+#product1 .pro img {
+  width: 100%;  /* Ensures that the product image takes up 100% of its container */
+}
+#product1 .pro .des{
+  text-align: center;  /* Centers text within the description */
+  padding: 10px 0;  /* Adds padding to the description */
+}
+#product1 .pro .des h2{
+  padding-top: 1px;   /* Adds top padding to the h2 element within the description */
+  line-height: 0%;   /* To remove the line height of the h2 element within the description that was previously added for whole website's h2 */
+}
+#product1 .pro .des i{
+  font-size: 12px;  /* Sets the font size of the review star icons within the description */
+  color: rgb(199, 199, 6);   /* Sets the color the review stars*/
+  padding-top: 1px; /*  Adds top padding to the review stars*/
+  margin-top: 0px; /*  Adds top margin to the review stars*/
+}
+#product1 .pro .des h4{   
+  padding-top: 1px;  /* Adds top padding to the h4 element within the description */
+  margin-top: 10px;   /* Sets margin-top for the h4 within the description */
+  font-size: 15px; /* Sets the font size of the h4 element within the description */
+  font-weight: 700;  /* Sets the font weight */
+}
+.add-to-cart-btn,
+.wishlist-btn {
+    background-color: transparent; /* Sets the background color of the buttons to transparent */
+    color: #000000;  /* Sets the text color of the buttons */
+    padding: 2% 4%; /* Sets padding for the buttons */
+    border: solid 2px black;  /* Sets the border properties for the buttons */
+    border-radius: 5px;  /* Adds border-radius for rounded corners */
+    box-shadow: #161616;  /* Adds a box shadow to the buttons */
+    cursor: pointer; /* Adds a box shadow to the buttons */
+    margin-right: 1%; /* Sets right margin for the buttons for gaps */
+    margin-top: 2%; /* Sets top margin for the buttons */
+}
+/* Hover effect */
+.add-to-cart-btn:hover,
+.wishlist-btn:hover {
+  background-color: #b3aca7; /* Changes background color on hover */
+  color: white;  /* Changes text color on hover */
+}
+/* pagination */
+#pagination {
+  text-align: center;  /* Centers text within the pagination section */
+  margin-top: 50px;   /* Adds top margin to the pagination section */
+  margin-bottom: 50px;  /* Adds bottom margin to the pagination section for gap with footer */
+  background-color: none; /* Sets background color to none */
+}
+#pagination a{   /* Targets the button (link) for page numbers */
+  text-decoration: none;  /* Removes underline from anchor elements */
+  background-color:  rgb(243, 255, 198);  /* Sets background color for anchor elements */
+  padding: 15px 20px;  /* Adds padding to anchor elements */
+  border: #000000 solid;   /* Sets thin solid border for anchor elements */
+  border-radius: 35px;   /* Adds border-radius for rounded corners */
+  color: #000000; /* Sets text color for anchor elements */
+  font-weight: 600;  /* Sets font weight for anchor elements */
+}
+#pagination a:hover, #pagination .current {
+  background-color: #000000;  /* Changes background color on hover or for the current page */
+  color: #ffffff;   /* Changes text color on hover or for the current page */
+}
+
+/* Single product page */
+#prodetails {
+  display: flex;    /* Enables flexbox layout for the product details section */
+  margin-top: 20px;   /* Adds top margin to the product details section */
+}
+#prodetails .single-pro-details{
+  width: 50%;   /* Sets the width of the product details container */
+  padding-top: 30px;   /* Adds top padding to the product details container */
+  border: #000000 dotted;  /* Adds a dotted border with black color */
+  border-width: 1px; /* Sets the border width */
+}
+#prodetails .single-pro-details h2{
+  padding: 0px 0 20px 0;   /* Adds padding to the h2 element within the product details */
+}
+#prodetails .single-pro-details h3{
+  font-size: 20px;   /* Sets the font size of the h3 element within the product details */
+}
+#prodetails .single-pro-details h4{
+  font-size: 15px;  /* Sets the font size of the h4 element within the product details */
+}
+#prodetails .single-pro-details span{
+font-size: 14px;    /* Sets the font size of the span element within the product details */
+}
+#prodetails .single-pro-image{
+  width: 40%;  /* Sets the width of the product image container */
+  margin-right: 50px;  /* Adds right margin to the product image container */
+}
+.small-img-group{
+  display: flex;  /* Adds right margin to the product image container */
+  justify-content: space-between;  /* Distributes space evenly between small images */
+}
+.single-pro-image img {
+  width: 100%; /* Sets the width of the product image container */
+  max-width: 100%; /* recommended for responsiveness */
+}
+
+.small-img-col {
+  flex-basis: 24%;   /* Sets the initial size of each small image column */
+  cursor: pointer;   /* Changes cursor on hover to indicate interactivity */
+  transition: transform 0.3s ease-in-out;   /* Adds a smooth transition effect for scaling on hover */
+}
+.small-img-col:hover {
+  transform: scale(1.1);    /* Scales the small image on hover */
+}
+#quantity {
+  border: 2px solid black; /* Adds a solid black border to the quantity input area */
+  background-color: transparent; /* Sets the background color of the quantity input area to transparent */
+  cursor: pointer;   /* Changes cursor on hover to indicate interactivity */
+}
+
+
+
+/*Cart Page*/
+#cart {
+  overflow-x: auto;  /* Allows horizontal scrolling when content overflows */
+}
+#cart table{
+  width: 100%;   /* Sets the table width to 100% */
+  border-collapse: collapse;   /* Collapses table borders so the cells share single border */
+  table-layout: fixed;  /* Fixes the table layout */
+  white-space: nowrap;  /* Prevents text wrapping to the next line inside table cells */
+}
+#cart table img{
+  width: 70px;   /* Sets the width of images inside the table */
+}
+#cart table td:nth-child(1){
+  width: 150px;  
+  text-align: center;  /* Sets width and centers content for the first column */
+}
+#cart table td:nth-child(2){
+  width: 250px;
+  text-align: center;   /* Sets width and centers content for the second column */
+}
+#cart table td:nth-child(3){
+  width: 150px;
+  text-align: center;    /* Sets width and centers content for the third column */
+}
+#cart table td:nth-child(4){
+  width: 150px;
+  text-align: center;   /* Sets width and centers content for the fourth column */
+}
+#cart table td:nth-child(5){
+  width: 150px;
+  text-align: center;  /* Sets width and centers content for the fifth column */
+}
+#Cartinput {
+  width: 70px;  /* Sets the width of the input for quantity in the table */
+  padding: 10px 5px 10px 15px;   /* Sets padding for the input */
+  border-bottom: 1px solid black;   /* Adds a bottom border to the input */
+}
+#cart table thead{
+  border: 1px solid rgb(72, 87, 68);  /* Adds a border to the table header */
+  border-left: none;  /* Removes left border from the table header */
+  border-right: none; /* Removes right border from the table header */
+}
+#cart table thead td{
+  font-weight: 700;  /* Sets font weight for the table header cells */
+  text-transform: uppercase;   /* Transforms text to uppercase in the table header */
+  font-size: 13px;  /* Sets font size for the table header cells */
+  padding: 18px 0; /* Sets padding for the table header cells */
+}
+#cart table tbody tr td{
+  padding-top: 15px;   /* Sets top padding for the table body cells */
+}
+#cart table tbody td{
+  font-size: 13px;   /* Sets font size for the table body cells */
+}
+#cart-add{
+  display: flex; /* Enables flexbox layout for the cart addition section */
+  flex-wrap: wrap;   /* Allows flex items to wrap to the next line if necessary */
+  justify-content: space-between;  /* Distributes space between flex items */
+}
+#coupon {
+  width:37%;  /* Sets the width of the coupon container */
+  margin-bottom: 30px;  /* Adds bottom margin to the coupon container */
+  padding: 20px; /* Adds padding to the coupon container */
+}
+#coupon h3, #subtotal h3{   /*  Targets h3 elements within the coupon and subtotal containers */
+  font-size: 20px;  /* Sets font size for the */
+  padding-bottom: 15px; /* Adds bottom padding to the h3 elements */
+  line-height: 0; /* Removes the line height that was added for whole website's code */
+}
+#Voucher{
+  padding: 10px 20px;  /* Sets padding for the voucher input */
+  outline: none;  /* Removes the outline on focus for the voucher input */
+  width: 50%;   /* Sets the width of the voucher input */
+  margin-right: 10px;   /* Adds right margin to the voucher input */
+  border: 1px solid rgb(0, 0, 0);  /* Adds a solid border to the voucher input */
+}
+#cart-add button {
+  background-color: transparent;  /* Sets the background color of the button to transparent */
+  color: rgb(20, 7, 7);  /* Sets the text color of the button */
+  padding: 26px 26px;  /* Sets padding inside the button for spacings*/
+  border: 1px solid black;  /* Adds a solid border to the button */ 
+}
+#cart-add button:hover{
+  background-color: #b3aca7;  /* Changes background color on hover */
+  color: white;  /* Changes text color on hover */
+  cursor: pointer;  /* Changes cursor on hover to indicate interactivity */
+}
+.Subtotal-link {
+  background-color: transparent;  /* Sets the background color of the "Proceed to Checkout" link to transparent */
+  color: rgb(20, 7, 7); /* Sets the text color button */
+  padding: 15px 25px; /* Sets padding for the "Proceed to Checkout" link */
+  font-size: small; /* Sets font size for the link */
+  border: 1px solid black;  /* Adds a solid border to the link to give it a button look */
+  margin-top: 8%;  /* Sets top margin for the button */
+}
+.Subtotal-link:hover{
+  background-color: #b3aca7;  /* Changes background color on hover */
+  color: white;  /* Changes text color on hover */
+  cursor: pointer;  /* Changes cursor on hover to indicate interactivity */
+}
+#subtotal{
+  width: 50%;  /* Sets the width of the subtotal container */
+  margin-bottom: 30px;  /* Adds bottom margin to the subtotal container for bottom spacing */
+  border: 1px solid rgb(192, 197, 197);  /* Adds a solid border to the subtotal container */
+  padding: 30px; /* Adds padding to the subtotal container */
+}
+#subtotal table {
+  border-collapse: collapse; /* Collapses the borders between table cells in the subtotal table */
+  width: 100%;  /* Sets the width of the subtotal table */
+  margin-bottom: 20px; /* Adds bottom margin to the subtotal table */
+}
+#subtotal table td{
+  width: 50%;  /* Sets the width of the cells in the subtotal table */
+  border: 1px solid rgb(185, 185, 185);   /* Adds a solid border to the cells in the subtotal table */
+  padding: 10px;  /* Adds padding to the cells in the subtotal table */
+  font-size: 13px;  /* Sets font size for the cells in the subtotal table */
+}
+
+
+/* Checkout */
+.checkout-container {
+  display: flex; /* Sets the container as a flex container */
+  flex-wrap: wrap; /* Allows flex items to wrap to the next line if needed */
+  justify-content: space-between; /* Distributes items evenly with maximum space between them */
+  max-width: 1200px; /* Limits the maximum width of the container */
+  margin: 20px auto; /* Adds margin above and below, auto centers the container horizontally */
+  padding: 20px; /* Adds internal padding */
+  border: 1px solid #ccc;   /* Adds a border with a color */
+  text-align: center; /* Centers the text inside the container */
+}
+form {
+  display: flex; /* Styles the form elements as a flex container */
+  flex-direction: column; /* Aligns form elements in a column layout */
+  margin-bottom: 20px; /* Adds margin below the form */
+}
+label {
+  margin-bottom: 8px; /* Adds margin below labels for spacing */
+  margin-top: 10px; /* Adds margin above labels for spacing */
+}
+#place-order-btn {
+  background-color: transparent;  /* Sets the background color to transparent */
+  color: rgb(20, 7, 7); /* Sets the text color */
+  padding: 26px 26px; /* Adds internal padding to the button */
+  width: 20%; /* Sets the width of the button */
+  border: 1px solid black; /* Adds a 1-pixel solid border */
+  display: block;  /* Makes the button a block-level element */
+  margin-bottom: 2%; /* Adds margin at the bottom of the button */
+  margin-left: auto; /* Aligns the button to the right */
+}
+#place-order-btn:hover{
+  background-color: #b3aca7; /* Background color on hover */
+  color: white;  /* Text color on hover */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+.checkout-container input{
+  border-bottom: 1px solid black; /* Adds a bottom border to input fields which were absent before */
+}
+.checkout-container ::placeholder{
+  color:  rgb(117, 115, 115); /* Styles the placeholder text color for input fields */
+}
+/* REVIEWS */
+
+.ReviewConatiner{
+  position: relative;
+  width: 400px;
+  background: #6b6868;
+  padding: 20px 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 90px;
+  
+}
+.ReviewConatiner .post{
+  display: none;
+}
+.ReviewConatiner .Revtext{
+  font-size: 25px;
+  color: #000000;
+  font-weight: 500;
+}
+.ReviewConatiner .Revedit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #9b9292;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ReviewConatiner .Revedit:hover{
+  text-decoration: underline;
+}
+.ReviewConatiner .Revstar-widget input{
+  display: none;
+}
+.Revstar-widget label{
+  font-size: 40px;
+  color: #505050;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+}
+.ReviewConatiner form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .Revtextarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .Revtextarea textarea{
+  height: 78%;
+  width: 93%;
+  outline: none;
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: rgb(3, 3, 3);
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.Revtextarea textarea:focus{
+  border-color: #534e4e;
+}
+form .Revbtn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .Revbtn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #000000;
+  outline: none;
+  background-color: transparent;
+  color: rgb(20, 7, 7);
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .Revbtn button:hover{
+  background: #1b1b1b;
+}
+
+
+/* Start Media Query */
+
+@media (max-width: 799px) {
+  #navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -310px;
+    height: 100vh;
+    width: 300px;
+    background-color: #6b6868;
+    box-shadow: 0 40px 60px rgb(126, 126, 126);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  #navbar-nav.active {
+    right: 0px;
+  }
+  #navbar-nav li{
+    margin-bottom: 25px;
+  }
+ 
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: rgb(243, 255, 198);
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close{
+    display: initial;
+    position:absolute;
+    top: 30px;
+    left: 30px;
+    color: rgb(243, 255, 198);
+    font-size: 24px;
+  }
+  #lg-cart{
+    display: none;
+  }
+    
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-p1 .col {
+  margin-left: 0; /* Resetting the left margin for smaller screens */
+}
+
+.section-p1 .follow {
+  margin-top: 0;
+  margin-right: 0px; 
+}
+#cart-add {
+  flex-direction: column;
+}
+#coupon {
+  width: 96%;
+}
+#subtotal {
+width: 93%;
+padding: 20px;
+}
+/*sproduct page*/
+#prodetails .single-pro-details span {
+  font-size: 13px;
+}
+
+}
+
+
+
+
+@media (max-width: 477px) {
+
+  /*AboutUs*/
+  #about-head {
+flex-direction: column;
+}
+
+#about-head img{
+  width: 100%;
+}
+#about-head div {
+  padding-left: 14px;
+} 
+
+/*hero*/
+#hero {
+  flex-direction: column;
+  }
+  
+  #hero .learnmore{
+    padding: 6px 15px;  /* Adjust the padding for smaller screens */
+        font-size: 12px;
+        
+  }
+
+  #hero .HeroImg{
+    width: 90%;
+    margin-left: 0;
+  }
+  #hero .HomeText {
+   margin-left: 0;
+   width:90%;
+  }
+#hero h1{
+  font-size: 90%;
+}
+#hero p{
+  font-size: small;
+
+}
+/*Conact us*/
+
+input {
+
+  width: 325px;
+
+}
+textarea {
+  width: 325px;
+  max-width: 470px;
+
+}
+#submit {
+  width: 357px;
+  
+}
+#form {
+  position: relative;
+  width: 360px;
+  margin: 50px auto 100px auto;
+}
+
+
+  /*cart page*/
+
+  #cart-add {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 90%;
+}
+#subtotal {
+  width: 88%;
+  padding: 20px;
+}
+.Logo {
+  margin-left: -80px;
+}
+/* checkout*/
+.checkout-container input {
+  width: 290px;
+}
+#place-order-btn {
+  width: 35%;
+  margin-right: 3%;
+}
+
+}
+
+@media (max-width: 545px) {
+  /* checkout*/
+.checkout-container input {
+  width: 300px;
+}
+#place-order-btn {
+  width: 35%;
+  margin-right: 3%;
+}
+}
+
+@media (max-width: 700px) {
+
+  /*AboutUs*/
+  #about-head {
+flex-direction: column;
+}
+
+#about-head img{
+  width: 100%;
+}
+#about-head div {
+  padding-left: 14px;
+} 
+.AbtImg {
+  margin-top: 8%;
+}
+
+#about-head div p {
+  font-size: 10px;
+}
+}
+
+
+@media (max-width: 966px) {
+  #product1 .pro {
+    width: 2%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+
+}
+
+
+@media (max-width: 1240px) {
+  #product1 .pro {
+    width: 27%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+  /*hero*/
+#hero{
+  padding-top: 20%;
+}
+
+  #hero .learnmore{
+    padding: 6px 15px;  /* Adjust the padding for smaller screens */
+    font-size: 12px;   
+  }
+
+#hero p{
+  font-size: 18px;
+}
+}
+
+@media (max-width: 1250px) {
+  /*ABout US*/
+  #about-head div p{
+    font-size: 17px;
+}
+}
+
+@media (max-width: 1050px) {
+  #product1 .pro {
+    width: 6%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+
+  /*hero*/
+  #hero .learnmore{
+    padding: 6px 15px;  /* Adjust the padding for smaller screens */
+    font-size: 12px;   
+  }
+ 
+#hero p{
+  font-size: 18px;
+}
+.HomeText{
+  padding-right: 5%; 
+}
+}
+
+@media (max-width: 1100px) {
+  /*ABout US*/
+  #about-head div p{
+    font-size: 16px;
+}
+}
+@media (max-width: 1040px) {
+  /*ABout US*/
+  #about-head div p{
+    font-size: 13px;
+}
+#about-head div h2{
+  font-size: 25px;
+}
+}
+
+@media (max-width: 960px) {
+  #product1 .pro {
+    width: 43%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+  /*hero*/
+  #hero .learnmore{
+    padding: 6px 15px;  /* Adjust the padding for smaller screens */
+    font-size: 12px;   
+  }
+
+#hero p{
+  font-size: 15px;
+}
+
+.HomeText{
+  margin-left: 17%; 
+}
+}
+
+
+@media (max-width: 1010px) {
+
+   /*hero*/
+   #hero .learnmore{
+    padding: 6px 15px;  /* Adjust the padding for smaller screens */
+    font-size: 12px;   
+  }
+
+#hero p{
+  font-size: 15px;
+}
+
+.HomeText{
+  margin-left: 17%; 
+}
+
+
+}
+
+@media (max-width: 950px) {
+  #product1 .pro {
+    width: 42%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+/*hero*/
+.HomeText{
+ padding-bottom: 5%; 
+}
+
+#hero h1{
+  font-size: 30px;
+}
+
+}
+@media (max-width: 830px) {
+  #product1 .pro {
+    width: 41%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+}
+
+@media (max-width: 840px) {
+/*hero*/
+.HomeText{
+  padding-bottom: 5%; 
+  margin-left: 8%;
+  width: 44%;
+ }
+ 
+ #hero h1{
+   font-size: 30px;
+ }
+}
+@media (max-width: 865px) {
+  #about-head div p {
+    font-size: 11px;
+}
+}
+
+@media (max-width: 740px) {
+  #product1 .pro {
+    width: 40%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+}
+@media (max-width: 740px) {
+  #product1 .pro {
+    width: 39%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+
+}
+
+@media (max-width: 760px) {
+/*hero*/
+.HomeText{
+  padding-bottom: 5%; 
+  margin-left: 8%;
+  width: 48%;
+ }
+ 
+ #hero h1{
+   font-size: 30px;
+ }
+ .HeroImg{
+  width: 34%;
+ }
+}
+@media (max-width: 770px) {
+  #product1 .pro {
+    width: 39%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 20px;
+}
+/*hero*/
+.HomeText{
+  padding-bottom: 5%; 
+  margin-left: 8%;
+  width: 45%;
+ }
+ 
+ #hero h1{
+   font-size: 30px;
+ }
+
+}
+
+@media (max-width: 770px) {
+  /*hero*/
+.HomeText{
+  padding-bottom: 5%; 
+  margin-left: 8%;
+  width: 46%;
+ }
+ 
+ #hero h1{
+   font-size: 30px;
+ }
+
+ .HeroImg{
+width: 30%;
+ }
+}
+
+@media (max-width: 650px) {
+  #product1 .pro {
+    width: 90%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 15px 30px;
+}
+#about-head div p {
+  font-size: 20px;
+}
+}
+@media (max-width: 610px) {
+
+#about-head div p {
+  font-size: 12px;
+}
+#about-head div h2 {
+  font-size: 24px;
+}
+
+}
+
+@media (max-width: 400px) {
+
+  #about-head div p {
+    font-size: 11px;
+  }
+  #about-head div h2 {
+    font-size: 23px;
+  }
+  
+
+  }
+  @media (max-width: 450px){
+    .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .ClientR{
+      margin-top: 10px;
+    }
+    #CR-heading h4 {
+      font-size: 1.4rem;
+  }
+  }
